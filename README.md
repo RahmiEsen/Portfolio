@@ -1,59 +1,65 @@
-# Portfolio
+# 💼 Personal Portfolio – Rahmi Esen
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+Welcome to my personal portfolio!  
+This project reflects my journey, skills, and passion as a **frontend developer** with a strong focus on **modern web technologies** and clean design principles.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Live Preview
+
+🌐 [Visit the Live Website](...)
+
+---
+
+## 👨‍💻 About Me
+
+I'm Rahmi Esen – a passionate and detail-driven frontend developer currently focused on building fast, responsive, and elegant web applications with **Angular**, **TypeScript**, and **SCSS**.  
+This portfolio is not just a project – it's my personal brand and a real-world representation of what I can do.
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend       | Styling        |
+|----------------|----------------|
+| Angular        | SCSS / CSS     |
+| TypeScript     | BEM Methodology|
+| HTML5          | Responsive Grid|
+
+---
+
+## ✨ Features
+
+✔️ Interactive contact form with live validation  
+✔️ Real mail sending via secure PHP backend (PHPMailer)  
+✔️ Modular structure for scalability and maintainability  
+✔️ Fully responsive design – mobile to desktop  
+✔️ Smooth scroll & animation effects (optional)  
+✔️ Clean, optimized and readable code  
+
+---
+
+## 📷 Screenshots
+
+
+
+---
+
+## 🧠 Project Goals
+
+- Demonstrate real-world frontend architecture  
+- Highlight component-based design (Angular)  
+- Provide a seamless and intuitive user experience  
+- Serve as a foundation for further projects and client work  
+
+---
+
+## 🔧 Installation
+
+If you want to run the project locally:
 
 ```bash
+git clone https://github.com/RahmiEsen/Portfolio.git
+cd Portfolio
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
