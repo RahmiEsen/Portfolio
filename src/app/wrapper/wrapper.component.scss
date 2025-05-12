@@ -1,0 +1,16 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 1280px;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 1060px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 35px;
+    }
+}

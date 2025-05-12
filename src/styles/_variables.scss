@@ -1,0 +1,22 @@
+:root {
+    --color-background: #0E100F;
+    --color-primary-1: #0ae448;
+    --color-primary-2: #A374FF;
+    --color-primary-3: #00bad5;
+    --color-primary-4: #fec5fb;
+    --color-primary-5: #ff8709;
+    --color-primary-6: #d1d1d1;
+    --color-input: #454533;
+    --color-border: #323228;
+    --color-card-background: #191917;
+    --color-text: #ffffe3;
+    --color-text-hover: #18a0fb;
+    --color-glas: linear-gradient(
+    var(--color-card-background) 0%, 
+    rgba(25, 25, 23, 0.3) 100%
+    );
+    --color-glas-hover: linear-gradient(
+    rgba(10, 228, 72, 0.12) 0%, 
+    rgba(25, 25, 23, 0.4) 100%
+    );
+}

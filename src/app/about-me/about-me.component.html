@@ -1,0 +1,29 @@
+<main>
+        <h1>About Me</h1>
+        <div class="separate"></div>
+        <div class="content-wrapper">
+                <div id="hero-text-container" class="hero-container">
+                        <div class="hero-text description-reveal" #textContainer>
+                                <div class="description-reveal-split">
+                                <span *ngFor="let letter of 'Human-focused design solutions'.split('')"
+                                        class="hero-char">{{ letter === ' ' ? '\u00A0' : letter }}</span>
+                                </div>
+                                <div class="description-reveal-split">
+                                <span *ngFor="let letter of 'that go beyond the surface,'.split('')"
+                                        class="hero-char">{{ letter === ' ' ? '\u00A0' : letter }}</span>
+                                </div>
+                                <div class="description-reveal-split">
+                                <span *ngFor="let letter of 'delivering meaningful experiences'.split('')"
+                                        class="hero-char">{{ letter === ' ' ? '\u00A0' : letter }}</span>
+                                </div>
+                                <div class="description-reveal-split">
+                                <span *ngFor="let letter of 'that inspire and transform.'.split('')"
+                                        class="hero-char">{{ letter === ' ' ? '\u00A0' : letter }}</span>
+                                </div>
+                        </div>
+                </div>
+                <div class="image">
+                        <img src="./images/co.png">
+                </div>
+        </div>
+</main>

@@ -1,0 +1,37 @@
+@use 'mixins' as *;
+
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-primary-2);
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 58px;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+span {
+    font-weight: 700;
+    font-size: 23px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Flubber';
+    src: url('/assets/fonts/FLUBBER_.TTF') format('truetype');
+}

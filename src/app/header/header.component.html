@@ -1,0 +1,118 @@
+<main>
+    <header>
+        <div class="hamburger-wrapper">
+            <div class="burger-wrapper" (click)="toggleDropdown()">
+                <div #hamburger class="hamburger" [ngClass]="{ 'is-active': isDropdownVisible }"></div>
+            </div>
+        </div>
+        <nav>
+            <ng-container *ngFor="let item of navItems">
+                <a
+                (click)="item.targetId ? navigateTo(item.targetId) : null"
+                [routerLink]="item.route || null"
+                (mouseenter)="hovered = item.label"
+                (mouseleave)="hovered = ''">
+                <img
+                    [src]="
+                        hovered === item.label
+                        ? 'assets/images/' + item.icon.replace('.png', '-hover.png')
+                        : 'assets/images/' + item.icon
+                    "
+                    [alt]="item.label"
+                />
+                {{ item.label }}
+                </a>
+            </ng-container>
+        </nav>
+    </header>
+    <div #dropdown class="mobil-dropdown" [ngClass]="{ 'is-visible': isDropdownVisible }">
+        <ng-container *ngFor="let item of navItems">
+            <a
+            (click)="item.targetId ? navigateTo(item.targetId) : null"
+            [routerLink]="item.route || null"
+            (mouseenter)="hovered = item.label"
+            (mouseleave)="hovered = ''">
+            {{ item.label }}
+            <img
+                [src]="
+                    hovered === item.label
+                    ? 'assets/images/' + item.icon.replace('.png', '-hover.png')
+                    : 'assets/images/' + item.icon
+                "
+                [alt]="item.label"
+            />
+            </a>
+        </ng-container>
+    </div>
+    <section class="wrapper">
+        <div class="profil">
+            <div class="mouse-1" #mouseRef1>
+                <img src="./assets/images/creator.png" alt="Me" />
+            </div>
+            <div class="name">
+                <span>I'm Rahmi Esen</span>
+            </div>
+            <div class="avatar">
+                <img src="./images/me.gif" alt="" />
+            </div>
+        </div>
+        <div class="headline">
+            <div class="mouse-2" #mouseRef2>
+                <img src="./assets/images/location.png" alt="Location" />
+            </div>
+            <h1>FRONTEND</h1>
+        </div>
+        <div class="headline">
+            <span>// Based in <br /> Cologne, Germany</span>
+            <h1 style="color: #ffd074;">DEVELOPER</h1>
+        </div>
+            <section>
+                <div class="editor">
+                    <div class="close">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="gutter">
+                            <span style="color: #6e7681;">1</span>
+                            <span style="color: #cccccc;">2</span>
+                        </div>
+                        <div class="typing">
+                            <span style="color: #6a9955;">// This is how every journey begins</span>
+                            <div class="greeting">
+                            <span style="color: #9bdafc;">console</span>
+                            <span style="color: #cccccc;">.</span>
+                            <span style="color: #dcdcaa;">log</span>
+                            <span style="color: #fad300;">(</span>
+                            <span style="color: #ce9178;">"</span>
+                            <span #typewriter style="color: #ce9178;"></span>
+                            <span #cursor style="color: #adaeac;">|</span>
+                            <span style="color: #ce9178;">"</span>
+                            <span style="color: #fad300;">)</span>
+                            <span style="color: #cccccc;">;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <div class="headline">
+            <h1 style="color: var(--color-text);">VISION &</h1>
+            <div class="mouse-3" #mouseRef3>
+                <img src="./assets/images/code.png" alt="Code Icon" />
+            </div>
+        </div>
+        <div class="headline">
+            <h1 style="color: #17f1d1;">CODE</h1>
+            <span>// Interaction Designer <br /> Technical Creator</span>
+        </div>
+    </section>
+    <div class="subtitel">
+        <span>
+        I turn complex designs into
+        <span style="color: var(--color-primary-2);">clean</span>,
+        <span style="color: var(--color-primary-1);">functional</span>, <br />
+        and <span style="color: var(--color-primary-5);">engaging</span> digital products.
+        </span>
+    </div>
+</main>

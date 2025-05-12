@@ -1,0 +1,129 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    h1 {
+        font-size: 50px;
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: .75rem;
+        padding-bottom: 2rem;
+    }
+}
+
+input, textarea {
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .625rem 0;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: var(--color-primary-2);
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+    display: none;
+    }
+}
+
+label {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder {
+    font-size: 16px;
+    color: var(--color-input);
+}
+
+.placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-input);
+}
+
+.content {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 2rem 0;
+    gap: 1rem;
+    border-top: 2px solid var(--color-border);
+    h1 {
+        font-size: 16px;
+    }
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.error-text {
+    color: var(--color-primary-5);
+    font-size: 14px;
+}
+
+.success {
+    width: 85%;
+    color: var(--color-primary-1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+.success.fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(10px); }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px !important;
+    }
+    h2 {
+        font-size: 14px !important;
+    }
+    label, button {
+        font-size: 20px !important;
+    }
+    input {
+        font-size: 18px !important;
+    }
+    button {
+        padding: 16px 40px;
+    }
+    main {
+        padding: 1rem !important;
+    }
+    .placeholder {
+        font-size: 16px !important;
+    }
+}

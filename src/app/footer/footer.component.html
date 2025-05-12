@@ -1,0 +1,51 @@
+<footer>
+    <div class="footer-wrapper">
+        <div class="container-wrapper">
+            <div class="content">
+                <h3>Where <span style="color: var(--color-primary-4);">aesthetics</span> & <br>
+                <span style="color: var(--color-primary-3);">functionality</span> meet</h3>
+                <div class="col">
+                    <h3 style="color: var(--color-primary-5);">Explore</h3>
+                    <div class="text">
+                        <span *ngFor="let link of navLinks" 
+                              (click)="navigateTo(link.target)">
+                              {{ link.name }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="col">
+                    <h3 style="color: var(--color-primary-3);">Follow Me</h3>
+                    <div class="text">
+                        <span *ngFor="let social of socialLinks" 
+                              (click)="openExternal(social.url)">
+                            <img [src]="social.icon" [alt]="social.name">
+                            {{ social.name }}
+                        </span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item" (click)="openProjects()">
+                        <div class="info">
+                            <span>My Projects</span>
+                            <p style="color: var(--color-primary-6);">Explore Projects</p>
+                        </div>
+                        <button class="next">
+                            <img src="./images/next.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-wrapper">
+            <svg viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <text x="0" y="100" textLength="1000" lengthAdjust="spacingAndGlyphs">RAHMI ESEN</text>
+            </svg>
+        </div>
+    </div>
+    <div class="footprint">
+        <p>Rahmi Esen ©2025 - Privacy Policy</p>
+        <p>Cologne, Germany</p>
+    </div>
+</footer>
