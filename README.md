@@ -1,5 +1,10 @@
 # 💼 Personal Portfolio – Rahmi Esen
 
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat&logo=greensock&logoColor=white)
+
 Welcome to my personal portfolio!  
 This project showcases my frontend development skills with a strong focus on **modern UI**, **animation** and **clean code structure** using **Angular**, **TypeScript**, **GSAP** and **Three.js**.
 
