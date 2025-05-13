@@ -12,8 +12,7 @@ import { RouterModule } from '@angular/router';
 export class FooterComponent {
   socialLinks = [
     { icon: './assets/stack/linkedin.svg', name: 'LinkedIn', url: 'https://linkedin.com' },
-    { icon: './assets/stack/github.svg', name: 'GitHub', url: 'https://github.com' },
-    { icon: './assets/stack/insta.svg', name: 'Instagram', url: 'https://instagram.com' }
+    { icon: './assets/stack/github.svg', name: 'GitHub', url: 'https://github.com' }
   ];
   
   navLinks = [

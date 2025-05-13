@@ -8,8 +8,8 @@
                     <h3 style="color: var(--color-primary-5);">Explore</h3>
                     <div class="text">
                         <span *ngFor="let link of navLinks" 
-                              (click)="navigateTo(link.target)">
-                              {{ link.name }}
+                            (click)="navigateTo(link.target)">
+                            {{ link.name }}
                         </span>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                     <h3 style="color: var(--color-primary-3);">Follow Me</h3>
                     <div class="text">
                         <span *ngFor="let social of socialLinks" 
-                              (click)="openExternal(social.url)">
+                            (click)="openExternal(social.url)">
                             <img [src]="social.icon" [alt]="social.name">
                             {{ social.name }}
                         </span>
@@ -31,7 +31,7 @@
                             <span>My Projects</span>
                             <p style="color: var(--color-primary-6);">Explore Projects</p>
                         </div>
-                        <button class="next">
+                        <button>
                             <img src="./images/next.png">
                         </button>
                     </div>

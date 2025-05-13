@@ -1,5 +1,4 @@
 @use 'styles/variables' as *;
-@use 'styles/mixins' as *;
 @use 'styles/typography';
 @use 'styles/buttons';
 
@@ -17,7 +16,7 @@ body {
 
 app-about-me, 
 app-my-projects, 
-app-wrapper, 
+app-section-wrapper, 
 app-contact, 
 app-footer {
     display: flex;
@@ -34,24 +33,3 @@ app-footer {
     background: #a374ff;
     border-radius: 10px
 }
-
-/* [data-theme='light'] {
-    .card {
-        border: 1px solid rgb(160, 157, 157) !important;
-        background: linear-gradient(rgb(255, 255, 255) -50%, rgba(150, 150, 150, 0.15) 100%) !important;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25) !important;
-        color: black !important;
-        &:hover {
-            background: linear-gradient(rgb(215, 215, 215) -50%, rgba(210, 210, 210, 0.7) 100%) !important;
-            border: 1px solid rgb(145, 145, 145) !important;
-        }
-    }
-    .card-numb {
-        border: 1px solid rgb(160, 157, 157) !important;
-        background: linear-gradient(rgb(255, 255, 255) -50%, rgba(150, 150, 150, 0.15) 100%) !important;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25) !important;
-    }
-    .kdot.active {
-        background-color: #000 !important;
-    }
-} */

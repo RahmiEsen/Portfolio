@@ -78,33 +78,33 @@ export class MyProjectsComponent implements AfterViewInit {
   }
   
   private setupOpenBoxTracking(): void {
-  const openDiv = this.getElement('.open');
-  if (!openDiv) return;
-  
-  const srcElements = document.querySelectorAll('.src');
-  const projectCards = document.querySelectorAll('.project-card');
-  
-  srcElements.forEach((srcEl) => {
-    srcEl.addEventListener('mousemove', (event) => {
-      this.openText = 'View Code Source';
-      this.updateOpenBoxPosition(openDiv, event as MouseEvent);
-    });
+    const openDiv = this.getElement('.open');
+    if (!openDiv) return;
     
-    srcEl.addEventListener('mouseleave', () => {
-      this.hideOpenBox(openDiv);
-    });
-  });
-  
-  projectCards.forEach((cardEl) => {
-    cardEl.addEventListener('mousemove', (event) => {
-      this.openText = 'Open';
-      this.updateOpenBoxPosition(openDiv, event as MouseEvent);
-    });
+    const srcElements = document.querySelectorAll('.src');
+    const projectCards = document.querySelectorAll('.project-card');
     
-    cardEl.addEventListener('mouseleave', () => {
-      this.hideOpenBox(openDiv);
+    srcElements.forEach((srcEl) => {
+      srcEl.addEventListener('mousemove', (event) => {
+        this.openText = 'View Code Source';
+        this.updateOpenBoxPosition(openDiv, event as MouseEvent);
+      });
+      
+      srcEl.addEventListener('mouseleave', () => {
+        this.hideOpenBox(openDiv);
       });
     });
+    
+    projectCards.forEach((cardEl) => {
+      cardEl.addEventListener('mousemove', (event) => {
+        this.openText = 'Open';
+        this.updateOpenBoxPosition(openDiv, event as MouseEvent);
+      });
+      
+      cardEl.addEventListener('mouseleave', () => {
+        this.hideOpenBox(openDiv);
+        });
+      });
   }
   
   private getElement(selector: string): HTMLElement | null {

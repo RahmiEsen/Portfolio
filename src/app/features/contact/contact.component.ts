@@ -66,16 +66,10 @@ export class ContactComponent {
   }
   
   sendToBackend(): void {
-    this.http.post('https://rahmiesen.com/sendMail.php', this.contactData)
-      .subscribe({
-        next: () => {
-          this.successMessage = 'Deine Nachricht wurde erfolgreich gesendet.';
-          this.contactData = { name: '', mail: '', message: '' };
-        },
-        error: (err) => {
-          console.error('Fehler beim Senden:', err);
-        }
-      });
+    this.http.post('https://rahmiesen.de/sendMail.php', this.contactData).subscribe({
+      next: () => this.handleSuccess(),
+      error: (err) => this.handleError(err)
+    });
   }
   
   handleSuccess(): void {

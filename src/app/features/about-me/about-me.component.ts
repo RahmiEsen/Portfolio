@@ -21,8 +21,10 @@ export class AboutMeComponent implements AfterViewInit {
   private lastMouseY = 0;
   
   ngAfterViewInit(): void {
-    this.collectCharacters();
-    this.addMouseListener();
+    if (window.innerWidth > 1024) {
+      this.collectCharacters();
+      this.addMouseListener();
+    }
   }
   
   ngOnDestroy(): void {

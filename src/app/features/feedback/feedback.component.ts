@@ -41,14 +41,6 @@ export class FeedbackComponent {
     }
   ];
   
-/*   get theme(): 'light' | 'dark' {
-    return document.documentElement.getAttribute('data-theme') as 'light' | 'dark';
-  }
-  
-  get nextButtonImage(): string {
-    return this.theme === 'light' ? './images/next-black.png' : './images/next-white.png';
-  } */
-  
   animatedCardIndex: number | null = null;
   activeCardIndex = 0;
   

@@ -46,9 +46,6 @@ a {
     &:nth-child(3) {
         top: 300px;
     }
-    &:hover {
-        background: var(--color-glas-hover);
-    }
 }
 
 .project-card {
@@ -225,16 +222,19 @@ a {
         padding: 1rem;
     }
     .project-wrapper {
-        height: 260vh;
+        height: auto;
         h1 {
             font-size: 36px;
+        }
+        .open {
+            display: none;
         }
     }
     .project-card {
         height: auto;
         width: 100%;
         .img-wrapper {
-            height: 250px;
+            height: 210px;
             img {
                 height: 100%;
                 border-radius: 0;

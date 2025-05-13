@@ -28,10 +28,12 @@ export class TechStackComponent implements AfterViewInit {
   constructor(private elRef: ElementRef) {}
   
   ngAfterViewInit(): void {
-    this.initCursorGlow();
     this.initScene();
     this.animate();
-    this.attachEvents();
+    if (window.innerWidth > 1024) {
+      this.initCursorGlow();
+      this.attachEvents();
+    }
   }
   
   private initCursorGlow(): void {

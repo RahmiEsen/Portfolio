@@ -50,10 +50,7 @@ span {
     align-items: center;
     width: 100%;
     gap: 14rem;
-    .content:nth-of-type(1) {
-        flex-grow: 1;
-    }
-    .content:nth-of-type(2) {
+    .content {
         gap: 2.5rem;
     }
 }
@@ -144,6 +141,10 @@ span {
 @media (max-width: 800px) {
     footer {
         padding: 1rem;
+        button {
+            height: 45px;
+            width: 45px;
+        }
     }
     .footer-wrapper {
         gap: 3rem;
@@ -168,8 +169,13 @@ span {
             font-weight: 400;
         }
     }
-    .col h3 {
-        font-size: 20px;
+    .col {
+        .item {
+            flex-direction: column;
+        }
+        h3 {
+            font-size: 20px;
+        }
     }
     .footprint {
         flex-direction: column;
