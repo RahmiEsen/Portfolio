@@ -13,31 +13,22 @@ export class FeedbackComponent {
   
   cards = [
     {
-      title: 'Lorem ipsum dolor sit amet.',
-      text: `A perfect world is never perfect, only filled with lies
-            Promises are broken and more resentment come alive
-            Race barriers make inferior of you and I
-            See, in a perfect world, I'll choose faith over riches`,
-      userName: '~ Kendrick Lamar',
-      userImage: 'images/kdot.jpg'
+      title: 'T. Schulz',
+      text: `Working with Rahmi was a real stroke of luck for me. He not only brings technical expertise but also a high level of empathy, structure, and professionalism. No matter how complex the project was, Rahmi always kept an overview and delivered reliable results.`,
+      userName: 'Team Partner',
+      userImage: './images/join.JPG'
     },
     {
-      title: 'Lorem ipsum dolor sit amet.',
-      text: `A perfect world is never perfect, only filled with lies
-            Promises are broken and more resentment come alive
-            Race barriers make inferior of you and I
-            See, in a perfect world, I'll choose faith over riches`,
-      userName: '~ Kendrick Lamar',
-      userImage: 'images/kdot.jpg'
+      title: 'E. Fatih',
+      text: `If anyone embodies the word "reliability", it's Rahmi. He's analytical, solution-oriented, and always open to new ideas. His sense of aesthetics and usability sets him apart from many other developers. It was a pleasure working with him.`,
+      userName: 'Rayvclo',
+      userImage: './images/rayvclo.jpg'
     },
     {
-      title: 'Lorem ipsum dolor sit amet.',
-      text: `A perfect world is never perfect, only filled with lies
-            Promises are broken and more resentment come alive
-            Race barriers make inferior of you and I
-            See, in a perfect world, I'll choose faith over riches`,
-      userName: '~ Kendrick Lamar',
-      userImage: 'images/kdot.jpg'
+      title: 'J. Roth',
+      text: `Rahmi impresses not only with his professional skills but also with his exceptional dedication. He's always one step ahead, contributes creative solutions, and remains focused and team-oriented. Working with him was truly enriching for me.`,
+      userName: 'Team Partner',
+      userImage: './images/join.JPG'
     }
   ];
   

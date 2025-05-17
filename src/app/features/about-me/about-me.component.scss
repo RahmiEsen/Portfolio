@@ -1,4 +1,4 @@
-.hero-container {
+  .hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
   
   .hero-char {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2.525rem;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     line-height: 1.4;
@@ -66,10 +66,10 @@
       }
     }
     .hero-char {
-      font-size: 23px;
+      font-size: 1rem;
     }
     .hero-container {
-      width: max-content;
+      width: fit-content;
     }
     .content-wrapper {
       flex-direction: column;
