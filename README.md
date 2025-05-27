@@ -29,9 +29,13 @@ This project showcases my frontend development skills with a strong focus on **m
 ✔️ Smooth scroll-based animations with **GSAP**  
 ✔️ Intro animations and 3D elements using **Three.js**  
 ✔️ Clean, component-based architecture with **Angular**  
+✔️ Optimized project structure with **lazy loading** for better performance  
+✔️ Improved internationalization (i18n) with better translations  
+✔️ Code cleanup and bug fixes for cleaner architecture  
 ✔️ Responsive layout – optimized for desktop and mobile  
 ✔️ Modular SCSS structure for scalable styling  
 ✔️ Real contact form integration with **PHPMailer** backend
+
 
 ---
 
