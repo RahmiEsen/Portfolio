@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    gap: 15px;
+    h2 {
+        color: var(--color-primary-2);
+    }
+    h3 {
+        color: var(--color-primary-5);
+    }
+    h4 {
+        color: var(--color-primary-3);
+    }
+    span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    p {
+        text-align: center;
+        width: 50%;
+    }
+}
+::ng-deep app-language-toggle button.toggle {
+    position: relative !important;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 400;
+    }
+    p {
+        font-size: 14px;
+        width: 100% !important;
+    }
+}

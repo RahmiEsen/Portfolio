@@ -1,0 +1,28 @@
+<main>
+    <h2>{{ 'legal.title' | translate }}</h2>
+    <p style="color: var(--color-primary-3);">
+        {{ 'legal.section1.label' | translate }}
+    </p>
+    <p>
+        {{ 'legal.section1.name' | translate }}<br>
+        {{ 'legal.section1.address' | translate }}<br>
+        {{ 'legal.section1.city' | translate }}<br>
+    </p>
+    <p>
+        {{ 'legal.section2.label' | translate }}<br>
+        {{ 'legal.section2.emailLabel' | translate }}
+        <a href="mailto:{{ 'legal.section2.email' | translate }}">
+        {{ 'legal.section2.email' | translate }}
+        </a><br>
+        {{ 'legal.section2.phone' | translate }}
+    </p>
+    <p>
+        <span style="color: var(--color-primary-5);">
+        {{ 'legal.section3.label' | translate }}
+        </span><br>
+        {{ 'legal.section3.name' | translate }}<br>
+        {{ 'legal.section3.address' | translate }}<br>
+        {{ 'legal.section3.city' | translate }}
+    </p>
+</main>
+<app-language-toggle></app-language-toggle>

@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 25px;
+    h2 {
+        color: var(--color-primary-2);
+    }
+    p {
+        text-align: center;
+    }
+    span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+::ng-deep app-language-toggle button.toggle {
+    position: relative !important;
+}

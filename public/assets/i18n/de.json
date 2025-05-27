@@ -1,0 +1,196 @@
+{
+  "header": {
+    "name": "Ich bin Rahmi Esen",
+    "location": "Mit Sitz in <br/> Köln, Deutschland",
+    "frontend": "FRONTEND",
+    "developer": "ENTWICKLER",
+    "console_comment": "// So beginnt jede Reise",
+    "console_text": "Hallo",
+    "vision": "VISION &",
+    "code": "CODE",
+    "roles": "Interaktionsdesigner <br/> Technischer Kreativer",
+    "subline": {
+      "part1": "Ich verwandle komplexe Designs in",
+      "clean": "klare",
+      "functional": "funktionale",
+      "and": "und",
+      "engaging": "ansprechende",
+      "part2": " digitale Produkte."
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "projects": "Meine Projekte",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "title": "Über mich",
+    "lines": [
+      "Hey, ich bin Rahmi Esen.",
+      "Ich entwickle moderne Webanwendungen,",
+      "die nicht nur gut aussehen, sondern funktionieren.",
+      "Durch meine Ausbildung habe ich den Code lieben gelernt",
+      "und mein Gespür für Design weiter geschärft.",
+      "Heute verbinde ich Technik mit Kreativität",
+      "und mache daraus meinen Beruf."
+    ]
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "languages": "Sprachen",
+    "open": "Öffnen",
+    "viewSource": "Quellcode anzeigen",
+    "join": {
+      "title": "Join",
+      "desc": "Ein Aufgabenmanagement-Tool im Kanban-Stil. Erstelle, organisiere und verwalte Aufgaben mit Drag-and-Drop und synchronisiere alles in Echtzeit mit Firebase. Ideal für Teamarbeit."
+    },
+    "el-pollo-loco": {
+      "title": "El Pollo Loco",
+      "desc": "Ein unterhaltsames Arcade-Spiel mit JavaScript. Steuere ein Huhn, weiche Hindernissen aus und sammle Punkte. Mit Animationen, mobil optimiert und ohne externe Libraries."
+    },
+    "pokedex": {
+      "title": "Pokédex",
+      "desc": "Eine responsive App mit PokéAPI. Suche, filtere und entdecke detaillierte Informationen zu Pokémon wie Typen, Fähigkeiten und Statistiken."
+    }
+  },
+  "stack": {
+    "title": "Fähigkeiten",
+    "subtitle": "Vielseitiger Tech-Stack",
+    "description": "Ich habe mit verschiedenen Technologien und Frameworks gearbeitet, um skalierbare und effiziente Anwendungen zu entwickeln."
+  },
+  "feedback": {
+    "title": "Referenzen",
+    "cards": {
+      "client1": {
+        "title": "T. Schulz",
+        "text": "Die Zusammenarbeit mit Rahmi war ein echter Glücksfall für mich. Er bringt nicht nur technisches Know-how mit, sondern auch Empathie, Struktur und Professionalität. Egal wie komplex das Projekt war – Rahmi behielt den Überblick und lieferte zuverlässig ab.",
+        "user": "Team Partner"
+      },
+      "client2": {
+        "title": "E. Fatih",
+        "text": "Wenn jemand das Wort ‚Zuverlässigkeit‘ verkörpert, dann Rahmi. Analytisch, lösungsorientiert und offen für neue Ideen. Sein Gespür für Ästhetik und Benutzerfreundlichkeit hebt ihn von vielen anderen Entwicklern ab. Es war eine Freude, mit ihm zu arbeiten.",
+        "user": "Rayvclo"
+      },
+      "client3": {
+        "title": "J. Roth",
+        "text": "Rahmi überzeugt nicht nur fachlich, sondern auch durch sein außergewöhnliches Engagement. Immer einen Schritt voraus, mit kreativen Lösungen, fokussiert und teamorientiert. Die Zusammenarbeit mit ihm war eine echte Bereicherung.",
+        "user": "Team Partner"
+      }
+    }
+  },
+  "contact": {
+    "title": "Lass uns in Kontakt treten!",
+    "subtitle": "Ob du an einem Projekt arbeiten möchtest, eine Lösung für ein Problem suchst oder einfach über Technik reden willst schreib mir gerne. Gemeinsam können wir Ideen verwirklichen.",
+    "name": {
+      "label": "Wie ist dein Name?",
+      "placeholder": "Max Mustermann*"
+    },
+    "mail": {
+      "label": "Wie lautet deine E-Mail?",
+      "placeholder": "max.mustermann@gmail.com*"
+    },
+    "message": {
+      "label": "Deine Nachricht",
+      "placeholder": "Hallo Rahmi, kannst du mir bei ... helfen?"
+    },
+    "send": "Absenden",
+    "errors": {
+      "nameRequired": "Bitte gib deinen Namen ein",
+      "emailRequired": "Bitte gib deine E-Mail-Adresse ein",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein",
+      "messageRequired": "Bitte gib eine Nachricht ein",
+      "messageTooShort": "Die Nachricht muss mindestens 10 Zeichen lang sein",
+      "failed": "❌ Senden fehlgeschlagen. Bitte versuche es später erneut."
+    },
+    "success": {
+      "sent": "✅ Vielen Dank! Deine Nachricht wurde gesendet."
+    }
+  },
+  "footer": {
+    "beforeColor": "Wo",
+    "colored1": "Ästhetik",
+    "middle": "und",
+    "colored2": "Funktionalität",
+    "afterColor": "aufeinandertreffen",
+    "explore": "Entdecken",
+    "nav": {
+      "home": "Startseite",
+      "about": "Über mich",
+      "contact": "Kontakt"
+    },
+    "follow": "Folge mir",
+    "projects": {
+      "title": "Meine Projekte",
+      "description": "Projekte entdecken"
+    },
+    "legal": "Impressum",
+    "privacy": "Datenschutz",
+    "location": "Köln, Deutschland"
+  },
+  "legal": {
+    "title": "Impressum",
+    "section1": {
+      "label": "Angaben gemäß § 5 TMG",
+      "name": "Rahmi Esen",
+      "address": "Alter Wipperfürther Straße 40–42",
+      "city": "51065 Köln"
+    },
+    "section2": {
+      "label": "Kontakt",
+      "emailLabel": "E-Mail:",
+      "email": "esenrahmi23@gmail.com",
+      "phone": "Telefon: 0123–4567890"
+    },
+    "section3": {
+      "label": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+      "name": "Rahmi Esen",
+      "address": "Alter Wipperfürther Straße 40–42",
+      "city": "51065 Köln"
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "section1": {
+      "title": "1. Datenschutz auf einen Blick",
+      "text1": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen Daten passiert, wenn du diese Website besuchst. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst. Ausführliche Informationen zum Thema Datenschutz findest du in der folgenden Datenschutzerklärung.",
+
+      "sub1": {
+        "title": "Datenerfassung auf dieser Website",
+        "text1": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten findest du weiter unten unter „Verantwortliche Stelle“. Deine Daten werden einerseits dadurch erhoben, dass du sie uns mitteilst – z. B. über das Kontaktformular.",
+        "text2": "Andere Daten werden automatisch beim Besuch der Website durch unser IT-System erfasst (z. B. Browsertyp, Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch zur sicheren und fehlerfreien Bereitstellung der Website. Eine weitere Auswertung findet nicht statt."
+      },
+
+      "sub2": {
+        "title": "Deine Rechte",
+        "text1": "Du hast jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck deiner gespeicherten personenbezogenen Daten. Außerdem hast du das Recht auf Berichtigung oder Löschung dieser Daten sowie das Recht, eine erteilte Einwilligung jederzeit zu widerrufen. Zudem steht dir ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu."
+      }
+    },
+    "section2": {
+      "title": "2. Hosting",
+      "text1": "Diese Website wird gehostet bei:",
+      "provider": "ALL-INKL.COM – Neue Medien Münnich",
+      "address": "Hauptstraße 68, 02742 Friedersdorf",
+      "linkText": "Datenschutzerklärung von All-Inkl",
+      "text2": "Wir haben mit dem Anbieter einen Vertrag zur Auftragsverarbeitung (AVV) geschlossen. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb)."
+    },
+    "section3": {
+      "title": "3. Verantwortliche Stelle",
+      "text1": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+      "name": "Rahmi Esen",
+      "street": "Alter Wipperfürther Straße 40–42",
+      "city": "51065 Köln",
+      "emailLabel": "E-Mail:",
+      "email": "esenrahmi23@gmail.com"
+    },
+    "section4": {
+      "title": "4. Kontaktformular",
+      "text1": "Wenn du uns per Kontaktformular Anfragen sendest, werden deine Angaben zur Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.",
+      "text2": "Die Verarbeitung dieser Daten erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) oder auf Grundlage deines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO)."
+    },
+    "section5": {
+      "title": "5. Keine Cookies oder Analyse-Tools",
+      "text1": "Diese Website verwendet keine Cookies, Tracking- oder Analyse-Tools."
+    }
+  }
+}

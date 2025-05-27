@@ -47,7 +47,6 @@ span {
 .container-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     gap: 14rem;
     .content {
@@ -138,7 +137,27 @@ span {
     }
 }
 
-@media (max-width: 800px) {
+.impressum-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0.5rem 1rem 0 1rem;
+    gap: 20px;
+    p {
+        margin: 0;
+    }
+    a {
+        color: var(--color-text);
+        text-decoration: none;
+    }
+    .impressum {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
     footer {
         padding: 1rem;
         button {
@@ -147,22 +166,22 @@ span {
         }
     }
     .footer-wrapper {
-        gap: 3rem;
+        gap: 1.5rem;
     }
     .container-wrapper {
         flex-direction: column;
         margin: 0;
-        padding: 3rem .75rem 0;
         gap: 2.5rem;
     }
     .text-wrapper {
         font-size: 100%;
     }
     .content {
+        gap: 0 !important;
         h3 {
-            font-size: 22px;
+            font-size: 18px;
             span {
-                font-size: 22px;
+                font-size: 18px;
             }
         }
         span {
@@ -170,6 +189,7 @@ span {
         }
     }
     .col {
+        width: unset;
         .item {
             flex-direction: column;
         }
@@ -180,5 +200,9 @@ span {
     .footprint {
         flex-direction: column;
         padding-bottom: 8px;
+    }
+    .impressum-wrapper {
+        flex-direction: column;
+        gap: 0;
     }
 }

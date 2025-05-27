@@ -1,0 +1,196 @@
+{
+    "header": {
+        "name": "I'm Rahmi Esen",
+        "location": "Based in <br/> Cologne, Germany",
+        "frontend": "FRONTEND",
+        "developer": "DEVELOPER",
+        "console_comment": "// This is how every journey begins",
+        "console_text": "Hello",
+        "vision": "VISION &",
+        "code": "CODE",
+        "roles": "Interaction Designer <br/> Technical Creator",
+        "subline": {
+            "part1": "I turn complex designs into",
+            "clean": "clean",
+            "functional": "functional",
+            "and": "and",
+            "engaging": "engaging",
+            "part2": " digital products."
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "projects": "My Projects",
+        "about": "About Me",
+        "contact": "Contact Me"
+    },
+    "about": {
+        "title": "About Me",
+        "lines": [
+            "Hi, I'm Rahmi Esen.",
+            "I'm a passionate frontend developer",
+            "with an eye for design and functionality.",
+            "Through my training, I discovered and fell in love",
+            "with modern web technologies",
+            "now I'm ready to turn this passion",
+            "into my profession."
+        ]
+    },
+    "projects": {
+        "title": "My Projects",
+        "languages": "Languages",
+        "open": "Open",
+        "viewSource": "View Code Source",
+        "join": {
+            "title": "Join",
+            "desc": "Task management tool inspired by the Kanban system. Create, organize and manage tasks using drag-and-drop. Assign them to users and sync everything in real time via Firebase. Perfect for collaborative teams."
+        },
+        "el-pollo-loco": {
+            "title": "El Pollo Loco",
+            "desc": "A fun arcade game built with JavaScript. Control a cartoon chicken, dodge enemies, and collect points. Includes animations, mobile support and no external libraries."
+        },
+        "pokedex": {
+            "title": "Pokédex",
+            "desc": "A responsive app using the PokéAPI. Search, filter, and explore detailed data about Pokémon including stats, types, and abilities."
+        }
+    },
+    "stack": {
+        "title": "Skills",
+        "subtitle": "Multiple Tech Stack",
+        "description": "I have worked with multiple technologies and frameworks to build scalable and efficient applications."
+    },
+    "feedback": {
+        "title": "References",
+        "cards": {
+            "client1": {
+            "title": "T. Schulz",
+            "text": "Working with Rahmi was a real stroke of luck for me. He not only brings technical expertise but also a high level of empathy, structure, and professionalism. No matter how complex the project was, Rahmi always kept an overview and delivered reliable results.",
+            "user": "Team Partner"
+            },
+            "client2": {
+            "title": "E. Fatih",
+            "text": "If anyone embodies the word 'reliability', it's Rahmi. He's analytical, solution-oriented, and always open to new ideas. His sense of aesthetics and usability sets him apart from many other developers. It was a pleasure working with him.",
+            "user": "Rayvclo"
+            },
+            "client3": {
+            "title": "J. Roth",
+            "text": "Rahmi impresses not only with his professional skills but also with his exceptional dedication. He's always one step ahead, contributes creative solutions, and remains focused and team-oriented. Working with him was truly enriching for me.",
+            "user": "Team Partner"
+            }
+        }
+    },
+    "contact": {
+        "title": "Let's Connect!",
+        "subtitle": "Whether you're looking to collaborate on a project, need a solution to a challenging problem, or just want to talk tech, feel free to reach out. Together, we can turn ideas into reality.",
+        "name": {
+            "label": "What’s your name?",
+            "placeholder": "John Doe*"
+        },
+        "mail": {
+            "label": "What’s your email?",
+            "placeholder": "johndoe@gmail.com*"
+        },
+        "message": {
+            "label": "Your message",
+            "placeholder": "Hello Rahmi, can you help me with..*"
+        },
+        "send": "Send it",
+        "errors": {
+            "nameRequired": "Please enter your name",
+            "emailRequired": "Please enter your email",
+            "emailInvalid": "Please enter a valid email address",
+            "messageRequired": "Please enter a message",
+            "messageTooShort": "The message must be at least 10 characters long",
+            "failed": "❌ Sending failed. Please try again later."
+        },
+        "success": {
+            "sent": "✅ Thank you! Your message has been sent."
+        }
+    },
+    "footer": {
+        "beforeColor": "Where",
+        "colored1": "aesthetics",
+        "middle": "&",
+        "colored2": "functionality",
+        "afterColor": "meet",
+        "explore": "Explore",
+        "nav": {
+            "home": "Home",
+            "about": "About Me",
+            "contact": "Contact"
+        },
+        "follow": "Follow Me",
+        "projects": {
+            "title": "My Projects",
+            "description": "Explore Projects"
+        },
+        "legal": "Legal notice",
+        "privacy": "Privacy Policy",
+        "location": "Cologne, Germany"
+    },
+    "legal": {
+        "title": "Legal Notice",
+        "section1": {
+            "label": "Information according to § 5 TMG",
+            "name": "Rahmi Esen",
+            "address": "Alter Wipperfürther Straße 40–42",
+            "city": "51065 Cologne"
+        },
+        "section2": {
+            "label": "Contact",
+            "emailLabel": "E-mail:",
+            "email": "esenrahmi23@gmail.com",
+            "phone": "Phone: 0123–4567890"
+        },
+        "section3": {
+            "label": "Responsible according to § 55 para. 2 RStV",
+            "name": "Rahmi Esen",
+            "address": "Alter Wipperfürther Straße 40–42",
+            "city": "51065 Cologne"
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "section1": {
+            "title": "1. Overview of Data Protection",
+            "text1": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified. Detailed information can be found in the full privacy policy below.",
+
+            "sub1": {
+            "title": "Data Collection on This Website",
+            "text1": "The data processing on this website is carried out by the website operator. Contact details can be found below under 'Responsible Party'. Some data is collected when you provide it to us – for example via the contact form.",
+            "text2": "Other data is collected automatically when you visit the website (e.g. browser type, time of access). This data is collected automatically to ensure the secure and error-free operation of the website. No further evaluation takes place."
+            },
+
+            "sub2": {
+            "title": "Your Rights",
+            "text1": "You have the right to receive information free of charge at any time about the origin, recipients, and purpose of your stored personal data. You also have the right to request correction or deletion of this data and to revoke any given consent at any time. You can also lodge a complaint with the competent supervisory authority."
+            }
+        },
+        "section2": {
+            "title": "2. Hosting",
+            "text1": "This website is hosted by:",
+            "provider": "ALL-INKL.COM – Neue Medien Münnich",
+            "address": "Hauptstraße 68, 02742 Friedersdorf",
+            "linkText": "All-Inkl Privacy Policy",
+            "text2": "We have entered into a data processing agreement (DPA) with the provider. The processing is based on Art. 6(1)(f) GDPR (legitimate interest in secure operation)."
+        },
+        "section3": {
+            "title": "3. Responsible Party",
+            "text1": "The responsible party for data processing on this website is:",
+            "name": "Rahmi Esen",
+            "street": "Alter Wipperfürther Straße 40–42",
+            "city": "51065 Cologne",
+            "emailLabel": "E-mail:",
+            "email": "esenrahmi23@gmail.com"
+        },
+        "section4": {
+            "title": "4. Contact Form",
+            "text1": "If you send us inquiries via the contact form, your information will be stored for the purpose of processing the request. This data will not be shared without your consent.",
+            "text2": "The processing is based on Art. 6(1)(b) GDPR (pre-contractual measures) or on your legitimate interest (Art. 6(1)(f) GDPR)."
+        },
+        "section5": {
+            "title": "5. No Cookies or Analytics",
+            "text1": "This website does not use cookies, tracking, or analytics tools."
+        }
+    }
+}

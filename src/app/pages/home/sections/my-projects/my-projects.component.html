@@ -1,0 +1,69 @@
+<main #container>
+  <h1>{{ 'projects.title' | translate }}</h1>
+  <div class="separate"></div>
+  <div class="project-wrapper">
+    <div
+      class="card-wrapper"
+      *ngFor="let project of projects; let i = index"
+    >
+      <div class="project-info">
+        <h2>
+          {{ 'projects.' + project.key + '.title' | translate }}
+        </h2>
+        <div class="title">
+          <span>{{ 'projects.languages' | translate }}</span>
+          <div class="tech-mobil">
+            <span
+              *ngFor="let tech of project.technologies"
+              class="tech-item"
+            >
+              <span
+                class="dot"
+                [ngStyle]="{ 'background-color': technologiesColors[tech.name] }"
+              ></span>
+              <span class="tech-name">{{ tech.name }}</span>
+              <span class="tech-percent">{{ tech.percent }}%</span>
+            </span>
+          </div>
+          <span class="progress-bar">
+            <span
+              *ngFor="let tech of project.technologies"
+              [ngStyle]="{
+                'background-color': technologiesColors[tech.name],
+                'width.%': tech.percent
+              }"
+              class="bar-segment"
+            ></span>
+          </span>
+        </div>
+        <div class="info-section">
+          <span>{{ 'projects.' + project.key + '.desc' | translate }}</span>
+          <div class="tech">
+            <span
+              *ngFor="let tech of project.technologies"
+              class="tech-item"
+            >
+              <span class="tech-percent">{{ tech.percent }}%</span>
+              <span class="tech-name">{{ tech.name }}</span>
+              <span
+                class="dot"
+                [ngStyle]="{ 'background-color': technologiesColors[tech.name] }"
+              ></span>
+            </span>
+          </div>
+        </div>
+        <a class="src" [href]="project.source" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/stack/code.svg" alt="Code Source">
+        </a>
+      </div>
+      <div class="project-card">
+        <div class="img-wrapper">
+          <a [href]="project.link" target="_blank" rel="noopener noreferrer">
+            <img [src]="project.img" />
+          </a>
+        </div>
+      </div>
+    </div>
+  <div class="open" #openRef>{{ openText }}</div>
+  </div>
+</main>

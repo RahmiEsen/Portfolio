@@ -1,0 +1,64 @@
+<main #container>
+  <h1>{{ 'contact.title' | translate }}</h1>
+  <h2>{{ 'contact.subtitle' | translate }}</h2>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="content">
+      <h1 class="placeholder">01</h1>
+      <div class="input">
+        <label for="username">{{ 'contact.name.label' | translate }}</label>
+        <input
+          type="text"
+          name="username"
+          [placeholder]="'contact.name.placeholder' | translate"
+          [(ngModel)]="contactData.name"
+          (blur)="validateName()"
+          required
+        />
+        <div *ngIf="nameError" class="error-text">{{ nameError }}</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 class="placeholder">02</h1>
+      <div class="input">
+        <label for="mail">{{ 'contact.mail.label' | translate }}</label>
+        <input
+          type="text"
+          name="mail"
+          [placeholder]="'contact.mail.placeholder' | translate"
+          [(ngModel)]="contactData.mail"
+          (blur)="validateMail()"
+          required
+        />
+        <div *ngIf="mailError" class="error-text">{{ mailError }}</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 class="placeholder">03</h1>
+      <div class="input">
+        <label for="message">{{ 'contact.message.label' | translate }}</label>
+        <textarea
+          type="text"
+          name="message"
+          [placeholder]="'contact.message.placeholder' | translate"
+          [(ngModel)]="contactData.message"
+          (blur)="validateMessage()"
+          rows="3"
+          minlength="10"
+          required
+        ></textarea>
+        <div *ngIf="messageError" class="error-text">{{ messageError }}</div>
+      </div>
+    </div>
+
+    <div class="button-wrapper">
+      <h2 *ngIf="successMessage" class="success" [class.fade-out]="isFadingOut">
+        {{ successMessage }}
+      </h2>
+      <button type="submit" class="magnetic-button">
+        {{ 'contact.send' | translate }}
+      </button>
+    </div>
+  </form>
+</main>

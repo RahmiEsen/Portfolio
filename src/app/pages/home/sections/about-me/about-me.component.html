@@ -1,0 +1,15 @@
+<main #container>
+    <h1>{{ 'about.title' | translate }}</h1>
+    <div class="separate"></div>
+    <div class="content-wrapper">
+        <div id="hero-text-container" class="hero-container">
+            <div class="hero-text description-reveal">
+                <div class="description-reveal-split" *ngFor="let line of lines">
+                        <span *ngFor="let letter of line.split('')" class="hero-char">
+                                {{ letter === ' ' ? '\u00A0' : letter }}
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

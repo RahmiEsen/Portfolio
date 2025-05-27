@@ -1,0 +1,53 @@
+.toggle {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 45px;
+    padding: 3px;
+    border-radius: 28px;
+    gap: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.language {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    &.left {
+        left: 5px;
+    }
+    &.right {
+        left: 55px;
+    }
+}
+
+.text {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-primary-1);
+    transition: all 0.4s ease;
+    &.left {
+        left: 15px;
+    }
+    &.right {
+        left: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        bottom: 15px;
+    }
+}

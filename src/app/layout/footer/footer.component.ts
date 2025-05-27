@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
+
 export class FooterComponent {
   socialLinks = [
-    { icon: './assets/stack/linkedin.svg', name: 'LinkedIn', url: 'https://linkedin.com' },
-    { icon: './assets/stack/github.svg', name: 'GitHub', url: 'https://github.com' }
+    { icon: './assets/stack/linkedin.svg', name: 'LinkedIn', url: 'https://www.linkedin.com/in/rahmi-esen-574182310/' },
+    { icon: './assets/stack/github.svg', name: 'GitHub', url: 'https://github.com/RahmiEsen' }
   ];
   
   navLinks = [
