@@ -4,7 +4,8 @@ import {
   AfterViewInit,
   ElementRef,
   QueryList,
-  ViewChildren
+  ViewChildren,
+  ChangeDetectorRef
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
@@ -20,14 +21,15 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
+
 export class MyProjectsComponent implements AfterViewInit {
   @ViewChild('openRef', { static: true }) openRef!: ElementRef;
   @ViewChildren('card') cards!: QueryList<ElementRef>;
-
+  
   openText: string = '';
   private defaultText: string = '';
   private viewSourceText: string = '';
-
+  
   technologiesColors: { [key: string]: string } = {
     JavaScript: '#f1e05a',
     TypeScript: '#3178c6',
@@ -37,11 +39,11 @@ export class MyProjectsComponent implements AfterViewInit {
     Firebase: '#ffca28',
     API: '#00bcd4'
   };
-
+  
   projects = [
     {
       key: 'join',
-      source: 'https://github.com/RahmiEsen/Portfolio',
+      source: 'https://www.youtube.com/watch?v=KKCSwOVudMo',
       technologies: [
         { name: 'Angular', percent: 25 },
         { name: 'TypeScript', percent: 25 },
@@ -54,16 +56,16 @@ export class MyProjectsComponent implements AfterViewInit {
     },
     {
       key: 'el-pollo-loco',
-      source: 'https://github.com/RahmiEsen/Portfolio',
+      source: 'https://rahmi-esen.developerakademie.net/El_Pollo_Loco/index.html',
       technologies: [
         { name: 'JavaScript', percent: 50 },
         { name: 'CSS', percent: 30 },
         { name: 'HTML', percent: 20 }
       ],
       img: './assets/images/game.png',
-      link: 'https://www.youtube.com/watch?v=KKCSwOVudMo'
+      link: 'https://rahmi-esen.developerakademie.net/El_Pollo_Loco/index.html'
     },
-    {
+/*     {
       key: 'pokedex',
       source: 'https://github.com/RahmiEsen/Portfolio',
       technologies: [
@@ -74,10 +76,13 @@ export class MyProjectsComponent implements AfterViewInit {
       ],
       img: './assets/images/poke.png',
       link: 'https://www.youtube.com/watch?v=KKCSwOVudMo'
-    }
+    } */
   ];
   
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private cdRef: ChangeDetectorRef
+  ) {}
   
   ngAfterViewInit(): void {
     this.loadTranslations();
@@ -89,6 +94,7 @@ export class MyProjectsComponent implements AfterViewInit {
       this.defaultText = translations['projects.open'];
       this.viewSourceText = translations['projects.viewSource'];
       this.openText = this.defaultText;
+      this.cdRef.detectChanges();
     });
     this.translate.onLangChange.subscribe(() => this.loadTranslations());
   }

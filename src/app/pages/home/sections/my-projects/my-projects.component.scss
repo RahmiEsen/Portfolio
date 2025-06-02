@@ -227,11 +227,11 @@ h1 {
     main {
         padding: 1rem;
     }
+    h1 {
+        font-size: 36px;
+    }
     .project-wrapper {
         height: auto;
-        h1 {
-            font-size: 36px;
-        }
         .open {
             display: none;
         }
@@ -294,5 +294,19 @@ h1 {
     }
     .tech-mobil {
         display: grid;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-wrapper {
+        position: relative;
+        top: 40px;
+    }
+    .card-wrapper {
+        margin-bottom: 160px;
+    }
+    .card-wrapper:nth-child(3) {
+        position: relative;
+        top: -100px;
     }
 }

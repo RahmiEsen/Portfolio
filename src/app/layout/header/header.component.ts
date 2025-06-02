@@ -71,14 +71,42 @@ export class HeaderComponent {
   }
   
   navigateTo(targetId: string): void {
-    const currentUrl = this.router.url.split('#')[0];
-    if (currentUrl !== '/') {
+    const currentUrl = this.getCurrentUrl();
+    if (this.shouldNavigateToRoot(currentUrl)) {
+      this.prepareFocus(targetId);
       this.router.navigate(['/'], { fragment: targetId });
     } else {
-      const el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
+      this.scrollToSection(targetId);
+    }
+    this.closeDropdown();
+  }
+  
+  private getCurrentUrl(): string {
+    return this.router.url.split('#')[0];
+  }
+  
+  private shouldNavigateToRoot(currentUrl: string): boolean {
+    return currentUrl !== '/';
+  }
+  
+  private prepareFocus(targetId: string): void {
+    if (targetId === 'contact') {
+      sessionStorage.setItem('focusContactInput', 'true');
+    }
+  }
+  
+  private scrollToSection(targetId: string): void {
+    const el = document.getElementById(targetId);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth' });
+    
+    if (targetId === 'contact') {
+      this.prepareFocus(targetId);
+      setTimeout(() => {
+        const input = document.querySelector<HTMLInputElement>('input[name="username"]');
+        input?.focus();
+        sessionStorage.removeItem('focusContactInput');
+      }, 700);
     }
   }
 }

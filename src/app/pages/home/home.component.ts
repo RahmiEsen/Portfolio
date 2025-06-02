@@ -15,6 +15,7 @@ import {
   ContactComponent,
   SectionWrapperComponent
 } from './sections/';
+import { LanguageToggleComponent } from './sections/language-toggle/language-toggle.component';
 import { GsapAnimatorService } from '../../shared/gsap-animator.service';
 
 
@@ -24,6 +25,7 @@ import { GsapAnimatorService } from '../../shared/gsap-animator.service';
   imports: [
     CommonModule,
     HeroComponent,
+    LanguageToggleComponent,
     AboutMeComponent,
     MyProjectsComponent,
     TechStackComponent,

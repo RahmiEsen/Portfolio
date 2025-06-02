@@ -1,7 +1,15 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 2rem;
+}
+
 .toggle {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +55,19 @@
 }
 
 @media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
     .toggle {
-        bottom: 15px;
+        position: unset;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+    .language {
+        position: unset;
+    }
+    .text {
+        display: none;
     }
 }

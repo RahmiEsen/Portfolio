@@ -1,0 +1,6 @@
+<main>
+    <button class="toggle" type="button" (click)="toggleLanguage()">
+        <div class="language" [ngClass]="flagClass" [ngStyle]="flagStyle"></div>
+        <div class="text" [ngClass]="textClass">{{ textLabel }}</div>
+    </button>
+</main>

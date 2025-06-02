@@ -24,13 +24,44 @@ export class FooterComponent {
   ];
   
   navigateTo(target: string): void {
-    if (target === 'home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.prepareFocusIfContact(target);
+    this.scrollToTarget(target);
+  }
+  
+  private prepareFocusIfContact(target: string): void {
+    if (target === 'contact') {
+      sessionStorage.setItem('focusContactInput', 'true');
+    }
+  }
+  
+  private scrollToTarget(target: string): void {
+    if (this.isHome(target)) {
+      this.scrollToTop();
     } else {
-      const element = document.getElementById(target);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      this.scrollToSection(target);
+    }
+  }
+  
+  private isHome(target: string): boolean {
+    return target === 'home';
+  }
+  
+  private scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
+  private scrollToSection(target: string): void {
+    const element = document.getElementById(target);
+    if (!element) return;
+    
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
+    if (target === 'contact') {
+      setTimeout(() => {
+        const input = document.querySelector<HTMLInputElement>('input[name="username"]');
+        input?.focus();
+        sessionStorage.removeItem('focusContactInput');
+      }, 700);
     }
   }
   

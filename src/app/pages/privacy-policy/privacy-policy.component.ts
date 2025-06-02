@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { LanguageToggleComponent } from '../../layout/language-toggle/language-toggle.component';
+import { LanguageToggleComponent } from '../home/sections/language-toggle/language-toggle.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-privacy-policy',
@@ -9,6 +11,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })
-export class PrivacyPolicyComponent {
 
+export class PrivacyPolicyComponent {
+  constructor(private router: Router) {}
+  goBack(): void {
+    this.router.navigate(['/']);
+  }
 }

@@ -26,6 +26,7 @@ export class ContactComponent {
   successMessage: string = '';
   isFadingOut: boolean = false;
   @ViewChild('container', { static: false }) container!: ElementRef;
+  @ViewChild('nameInput', { static: false }) nameInputRef!: ElementRef<HTMLInputElement>;
   
   constructor(
     private http: HttpClient,
@@ -35,6 +36,14 @@ export class ContactComponent {
   
   ngAfterViewInit(): void {
     this.animator.fadeInUp(this.container);
+    
+    const shouldFocus = sessionStorage.getItem('focusContactInput');
+    if (shouldFocus === 'true') {
+      setTimeout(() => {
+        this.nameInputRef?.nativeElement.focus();
+        sessionStorage.removeItem('focusContactInput');
+      }, 400);
+    }
   }
   
   onSubmit(): void {

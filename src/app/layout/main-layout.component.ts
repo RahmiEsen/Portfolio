@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { GoTopComponent } from './go-top/go-top.component';
-import { LanguageToggleComponent } from './language-toggle/language-toggle.component';
 
 @Component({
   selector: 'app-main-layout',
@@ -15,7 +14,6 @@ import { LanguageToggleComponent } from './language-toggle/language-toggle.compo
     HeaderComponent,
     FooterComponent,
     GoTopComponent,
-    LanguageToggleComponent,
     CommonModule
   ],
   templateUrl: './main-layout.component.html',

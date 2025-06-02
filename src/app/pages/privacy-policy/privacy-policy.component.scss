@@ -24,12 +24,30 @@ main {
         width: 50%;
     }
 }
+
+.back {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 25px;
+    right: 25px;
+    img {
+        height: 35px;
+        transform: rotate(180deg);
+    }
+}
+
 ::ng-deep app-language-toggle button.toggle {
     position: relative !important;
     width: 100%;
+    bottom: 0 !important;
+    top: 25px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 925px) {
+    main {
+        padding: 5rem 2rem;
+    }
     h2 {
         font-size: 30px;
     }
